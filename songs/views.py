@@ -9,7 +9,7 @@ from rest_framework import generics
 import ipdb
 
 
-class SongView(generics.ListCreateAPIView, PageNumberPagination):
+class SongView(generics.ListCreateAPIView):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticatedOrReadOnly]
 
